@@ -7,6 +7,7 @@ import ExternalPlayerSettings from '../../components/external-player-settings/ex
 import SubscriptionSettings from '../../components/subscription-settings/subscription-settings.vue'
 import DownloadSettings from '../../components/download-settings/download-settings.vue'
 import PrivacySettings from '../../components/privacy-settings/privacy-settings.vue'
+import SyncSettings from '../../components/sync-settings/sync-settings.vue'
 import DataSettings from '../../components/data-settings/data-settings.vue'
 import DistractionSettings from '../../components/distraction-settings/distraction-settings.vue'
 import ProxySettings from '../../components/proxy-settings/proxy-settings.vue'
@@ -25,6 +26,7 @@ export default defineComponent({
     'player-settings': PlayerSettings,
     'subscription-settings': SubscriptionSettings,
     'privacy-settings': PrivacySettings,
+    'sync-settings': SyncSettings,
     'data-settings': DataSettings,
     'distraction-settings': DistractionSettings,
     'sponsor-block-settings': SponsorBlockSettings,
@@ -77,6 +79,10 @@ export default defineComponent({
         {
           type: 'privacy-settings',
           title: this.$t('Settings.Privacy Settings.Privacy Settings')
+        },
+        {
+          type: 'sync-settings',
+          title: this.$t('Settings.Sync Settings.Sync Settings')
         },
         {
           type: 'data-settings',
